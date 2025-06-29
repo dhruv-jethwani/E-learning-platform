@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to **[Your Project Name Here]**! This is a simple yet functional e-learning platform template designed to facilitate online learning experiences. It allows users to browse courses, watch video content, and manage their learning progress. Built with a focus on simplicity and scalability for small to medium-sized educational content, this platform serves as a solid foundation for your online learning initiatives.
+Welcome to **Learnopath**! This is a simple yet functional e-learning platform template designed to facilitate online learning experiences. It allows users to browse courses, watch video content, and manage their learning progress. Built with a focus on simplicity and scalability for small to medium-sized educational content, this platform serves as a solid foundation for your online learning initiatives.
 
 ## Features
 
