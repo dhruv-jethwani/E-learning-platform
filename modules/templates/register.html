@@ -1,0 +1,39 @@
+{% extends "base.html" %} 
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="container-box">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register_style.css') }}">
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+        <div class="form-group">
+            <label for="full_name">Full Name: </label>
+            <input type="text" class="form-control" name="full_name" placeholder="Enter Name" required><br>
+        </div>
+        <div class="form-group">    
+            <label for="phone">Phone Number: </label>
+            <input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" required><br>
+        </div>
+        <div class="form-group">    
+            <label for="email">Email ID: </label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required><br>
+        </div>
+        <div class="form-group">    
+            <label for="role">Role: </label>
+            <input type="text" class="form-control" name="role" id="role" placeholder="Teacher/Student/Admin" required><br>
+        </div>
+        <div class="form-group">    
+            <label for="password1">Password: </label>
+            <input type="password" class="form-control" name="password1" placeholder="Should be between 8-14 characters" pattern="(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[a-zA-Z]).{8,14}" required><br>
+        </div>
+        <div class="form-group">    
+            <label for="password2">Password (Confirm): </label>
+            <input type="password" class="form-control" name="password2" placeholder="Confirm Password" required><br>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a href="/login">Already have an account?</a><br>
+        
+    </form>
+</div>
+<br>
+{% endblock %}

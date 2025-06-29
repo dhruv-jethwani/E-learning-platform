@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home_style.css') }}">
+
+	<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+	/>
+<script>
+	function submit()
+	{
+		alert("Data Submitted!!");
+	}
+</script>
+</head>
+<body>
+<div id="navbar">
+<h1><u><a href='/home' id='head'>Learnopath: E-Learning Platform</a></u></h1>
+<ul id="nav">
+	<a href="#about"><li>About</li></a>
+	<a href="#courses"><li>Courses</li></a>
+	<a href="#contactus"><li>Contact Us</li></a>
+</ul>
+<p id="btn">
+	<a href='/logout' target='_blank'><button class="logout">Logout</button></a>
+	</p>
+</div>
+<img src="https://images.ctfassets.net/xri6xnn81z4a/5aXtYuOYClNeEEe02Hzr7w/bdd9928ff3760cee5978b5c26d461190/e-learning_app.jpg" id="img1"><br id="about">
+
+<hr><br>
+<div class="dd">
+	<h2><u>About</u></h2>
+<p>
+	Our Mission
+	At Learnopath, we are committed to democratizing education by providing high-quality, affordable, and accessible learning opportunities to everyone, everywhere. Our mission is to inspire lifelong learning and personal growth, equipping individuals with the knowledge and skills they need to succeed in today's dynamic world.
+</p>
+
+<h3>What We Offer:</h3>
+<p>
+	Diverse Course Catalog: Explore a wide range of courses spanning various subjects, including programming, business, arts, sciences, languages, and more. Whether you're a beginner or an expert, there's something for everyone.
+	Interactive Learning Experience: Engage with interactive lessons, quizzes, projects, and assignments that cater to different learning styles. Our platform offers a dynamic and immersive learning experience that keeps you motivated and excited to learn.
+	Expert Instructors: Learn from industry experts, seasoned professionals, and passionate educators who are dedicated to sharing their knowledge and expertise. Our instructors bring real-world experience and practical insights to the classroom, ensuring that you receive valuable insights and actionable advice.
+	Flexible Learning Options: Enjoy the flexibility to learn at your own pace, on your schedule, from anywhere in the world. Whether you prefer to study during your lunch break, in the evening, or on weekends, our platform is available 24/7 to accommodate your learning needs.
+</p>
+
+</div>
+<div id="courses" class="dd">
+	<h2><u>Courses</u></h2>
+	<!-- Course Cards -->
+<div class="course-card" onclick="redirectToInfoPage('cyber-security')">
+	<img src="https://img.freepik.com/free-photo/3d-internet-secuirty-badge_1048-18107.jpg?size=338&ext=jpg&ga=GA1.1.1224184972.1713830400&semt=ais" alt="Cyber Security">
+	<h3>Cyber Security</h3>
+	<p>Learn about protecting digital information and systems from cyberattacks.</p>
+	<form action="/CS" method="POST">
+    <button class="enroll-button">Enroll now</button>
+    </form>
+  </div>
+  
+  <div class="course-card" onclick="redirectToInfoPage('artificial-intelligence')">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx52HD78Iko5ntxjnNF0UKfez776L2XrQUWZ1JilxSgQ&s" alt="Artificial Intelligence" height="100px">
+	<h3>Artificial Intelligence</h3>
+	<p>Explore the fascinating world of AI and machine learning.</p>
+    <form action="/AI" method="POST">
+	<button class="enroll-button">Enroll now</button>
+    </form>
+  </div>
+  
+</p>
+	</p>
+</div>
+<div id="contactus" class="dd">
+	<h2><u>Contact Us</u></h2>
+	<p>
+		<input placeholder="Enter Name"><br>
+		<input placeholder="Enter EmailID"><br>
+		<input placeholder="Enter Mobile Number"><br>
+		<textarea placeholder="Enter Your Query"></textarea><br>
+		<button onclick="submit()" id="submit">Submit</button> 
+	</p>
+	<p id="ep">
+		<i class="ri-mail-line"></i>
+		<a href="mailto:dhruvjethwani22@gnu.ac.in"></i> dhruvjethwani22@gnu.ac.in</a><br>
+		<i class="ri-phone-line"></i>
+		+918780804441<br>
+	</p>
+</body>
+</html>
